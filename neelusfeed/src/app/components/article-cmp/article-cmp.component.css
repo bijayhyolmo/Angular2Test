@@ -1,0 +1,45 @@
+body,
+input,
+h1,
+p {
+    color: burlywood;
+}
+
+hr {
+    border-color: darksalmon;
+}
+
+.searchFeed {
+    text-align: right;
+    float: right;
+}
+
+input {
+    padding: 12px;
+    min-width: 300px;
+}
+
+.news-panel {
+    list-style: none;
+}
+
+.news-tile {
+    display:block;
+    width: 25%;
+    min-width: 200px;
+    float: left;
+    box-shadow: 1px 1px 1px 1px rgba(11,0,0,0.5);
+    margin: 15px;
+    min-height: 200px;
+}
+
+.news-tile-heading, .news-tile-body {
+    padding: 15px;
+}
+
+.news-tile-heading {
+    background: darksalmon;
+    font-size: larger;
+    font-weight: 600;
+    color: white;
+}

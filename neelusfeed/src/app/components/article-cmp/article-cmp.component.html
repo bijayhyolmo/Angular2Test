@@ -1,0 +1,22 @@
+<div>
+  <h1>My HOT News Feed
+    <div class="searchFeed">
+      <input type="text" [(ngModel)]="filter.filterParameter" placeholder="Search articles ..." (change)="filterArticles()" />
+    </div>
+  </h1>
+  <hr/>
+</div>
+
+<div>
+  <ul class="news-panel">
+    <li class="news-tile" *ngFor="let article of filter.results">
+      <div class="news-tile-heading">
+          {{article.Title}}
+      </div>
+    <div class="news-tile-body">{{article.Snippet}}</div>
+    </li>
+    <li *ngIf="filter.results.length <= 0">
+      <h3>No News today</h3>
+    </li>
+  </ul>
+</div>
